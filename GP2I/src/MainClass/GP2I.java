@@ -5,6 +5,8 @@
  */
 package MainClass;
 
+import view.console.Fenetre;
+
 /**
  *
  * @author kbiandji
@@ -16,6 +18,7 @@ public class GP2I {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Fenetre fenetre = new Fenetre();
     }
     
 }

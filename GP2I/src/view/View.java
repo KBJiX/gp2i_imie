@@ -5,12 +5,14 @@
  */
 package view;
 
-import javax.swing.JFrame;
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  *
  * @author kbiandji
  */
-public class Fenetre extends JFrame {
-    
+public abstract class View extends Observable implements Observer{
+
+
 }
