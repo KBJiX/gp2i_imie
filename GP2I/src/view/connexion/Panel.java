@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view.console;
+package view.connexion;
 
 import java.awt.TextField;
 import javax.swing.JFrame;

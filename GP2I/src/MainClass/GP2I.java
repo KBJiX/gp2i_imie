@@ -5,7 +5,7 @@
  */
 package MainClass;
 
-import view.console.Fenetre;
+import view.connexion.Fenetre;
 
 /**
  *
@@ -18,7 +18,14 @@ public class GP2I {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Fenetre fenetre = new Fenetre();
+        
+
+        
+            Fenetre fenetre = new Fenetre();
+        
+        
+        
+        
     }
-    
+
 }
