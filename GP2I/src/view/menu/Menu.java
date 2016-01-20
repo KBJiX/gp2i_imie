@@ -27,6 +27,9 @@ public class Menu extends JFrame {
     private JMenuItem item4 = new JMenuItem("Arrêter");
 
     public Menu() {
+        
+        
+        
 
     }
 
