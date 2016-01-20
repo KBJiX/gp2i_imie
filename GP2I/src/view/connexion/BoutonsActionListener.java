@@ -8,6 +8,7 @@ package view.connexion;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
+import view.menu.FenetreMenu;
 
 /**
  *
@@ -27,7 +28,7 @@ public class BoutonsActionListener implements ActionListener {
         if (ae.getActionCommand().equalsIgnoreCase("Annuler")) {
             System.exit(0);
         } else if (ae.getActionCommand().equalsIgnoreCase("Connexion")) {
-            System.out.println("Coucou");
+            FenetreMenu fenetre = new FenetreMenu();
         }else{
             System.err.println("message erreur");
         }

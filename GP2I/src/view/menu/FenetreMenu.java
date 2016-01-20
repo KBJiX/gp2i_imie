@@ -10,6 +10,7 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -24,6 +25,7 @@ public class FenetreMenu extends JFrame {
     JPanel panMenuBar;
     JPanel panCentral;
     JPanel panMenu;
+    JPanel panS;
 
     JMenuBar menuBar;
     JMenu menuFichier;
@@ -48,12 +50,15 @@ public class FenetreMenu extends JFrame {
         this.panCentral.setBackground(Color.white);
         this.panMenu = new JPanel();
         this.panMenuBar = new JPanel();
+        this.panS = new JPanel();
+        
 
         this.getContentPane().setLayout(new BorderLayout());
 
         this.getContentPane().add(this.panMenuBar, BorderLayout.NORTH);
         this.getContentPane().add(this.panCentral, BorderLayout.CENTER);
         this.getContentPane().add(this.panMenu, BorderLayout.WEST);
+        this.getContentPane().add(this.panS, BorderLayout.SOUTH);
 
         this.menuBar = new JMenuBar();
         this.panMenuBar.add(this.menuBar);

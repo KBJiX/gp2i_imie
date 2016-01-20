@@ -61,7 +61,6 @@ public class FenetreConnexion extends JFrame {
         //this.textPassword.addActionListener(new BoutonsActionListener(this));
         //BoutonsActionListener actionListener = new BoutonsActionListener(this);
 
-
         this.motDePasse = new JLabel("    Mot de passe : ");
 
         this.panConnexion.add(this.nomDeCompte);
@@ -86,6 +85,12 @@ public class FenetreConnexion extends JFrame {
         this.setVisible(true);
     }
 
+    public JButton getBoutonConnect() {
+        return boutonConnect;
+    }
 
+    public void setBoutonConnect(JButton boutonConnect) {
+        this.boutonConnect = boutonConnect;
+    }
 
 }
