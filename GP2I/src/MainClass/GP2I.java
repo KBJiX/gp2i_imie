@@ -5,7 +5,7 @@
  */
 package MainClass;
 
-import view.connexion.Fenetre;
+import view.connexion.FenetreConnexion;
 import view.menu.FenetreMenu;
 
 /**
@@ -22,7 +22,7 @@ public class GP2I {
         
 
         
-            FenetreMenu fenetreMenu = new FenetreMenu();
+            FenetreConnexion fenetreMenu = new FenetreConnexion();
         
         
         

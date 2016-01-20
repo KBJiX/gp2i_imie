@@ -21,10 +21,7 @@ public class Menu extends JFrame {
     private JMenu sousMeFichier = new JMenu("Sous ficher");
     private JMenu menuEdition = new JMenu("Edition");
 
-    private JMenuItem item1 = new JMenuItem("Ouvrir");
-    private JMenuItem item2 = new JMenuItem("Fermer");
-    private JMenuItem item3 = new JMenuItem("Lancer");
-    private JMenuItem item4 = new JMenuItem("Arrêter");
+    
 
     public Menu() {
         
