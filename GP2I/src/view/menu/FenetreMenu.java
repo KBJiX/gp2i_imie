@@ -10,11 +10,12 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 
 /**
  *
@@ -34,8 +35,6 @@ public class FenetreMenu extends JFrame {
 
     JMenuItem itemOuvrir;
     JMenuItem itemFermer;
-    JMenuItem itemLancer;
-    JMenuItem itemArreter;
 
     JButton boutonSalle;
     JButton boutonMachine;
@@ -49,38 +48,42 @@ public class FenetreMenu extends JFrame {
         this.panCentral = new JPanel();
         this.panCentral.setBackground(Color.white);
         this.panMenu = new JPanel();
-        this.panMenuBar = new JPanel();
         this.panS = new JPanel();
-        
+        this.menuBar = new JMenuBar();
 
         this.getContentPane().setLayout(new BorderLayout());
+        //this.getContentPane().setLayout(new CardLayout());
+        
 
-        this.getContentPane().add(this.panMenuBar, BorderLayout.NORTH);
+        this.getContentPane().add(this.menuBar, BorderLayout.NORTH);
         this.getContentPane().add(this.panCentral, BorderLayout.CENTER);
         this.getContentPane().add(this.panMenu, BorderLayout.WEST);
         this.getContentPane().add(this.panS, BorderLayout.SOUTH);
 
-        this.menuBar = new JMenuBar();
-        this.panMenuBar.add(this.menuBar);
         this.menuFichier = new JMenu("Fichier");
         this.menuBar.add(this.menuFichier);
         this.menuEdition = new JMenu("Edition");
         this.menuBar.add(this.menuEdition);
         this.menuApropo = new JMenu("À propos");
         this.menuBar.add(this.menuApropo);
-        this.menuBar.setLayout(new GridLayout(1, 4));
 
         this.itemOuvrir = new JMenuItem("Ouvrir");
         this.itemFermer = new JMenuItem("Fermer");
-        this.itemLancer = new JMenuItem("Lancer");
-        this.itemArreter = new JMenuItem("Arrêter");
+        this.itemOuvrir.addActionListener(new MenuActionListener(this));
+        this.itemFermer.addActionListener(new MenuActionListener(this));
 
-        this.boutonSalle = new JButton("Salle");
-        this.boutonMachine = new JButton("Machine");
-        this.boutonConsommable = new JButton("Consommable");
+        this.boutonSalle = new JButton("Salles");
+        this.boutonMachine = new JButton("Machines");
+        this.boutonConsommable = new JButton("Consommables");
         this.boutonStock = new JButton("Stock");
+        this.boutonSalle.addActionListener(new MenuActionListener(this));
+        this.boutonMachine.addActionListener(new MenuActionListener(this));
+        this.boutonConsommable.addActionListener(new MenuActionListener(this));
+        this.boutonStock.addActionListener(new MenuActionListener(this));
         this.panMenu.setLayout(new GridLayout(4, 1));
+          
         
+
         this.menuFichier.add(this.itemOuvrir);
         this.menuFichier.add(this.itemFermer);
 
